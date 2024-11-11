@@ -1,3 +1,7 @@
+[profile.dev]
+opt-level = 1
+overflow-checks = false
+
 [workspace]
 members = [
   "exercises/*/*",
@@ -12,3 +16,4 @@ resolver = "2"
 # regardless of the "global" setting for `overflow-checks` on the `dev` profile.
 [profile.dev.package.copy]
 overflow-checks = true
+ 
